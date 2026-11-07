@@ -1,0 +1,6 @@
+{
+  "name": "Recipe – World Recipe Explorer",
+  "description": "Discover authentic recipes from countries around the world with step-by-step cooking progress tracking, country dashboards, ingredients checklists, user favorites, and comprehensive admin management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
