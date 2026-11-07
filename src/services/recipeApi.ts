@@ -1,11 +1,11 @@
 import { Recipe, Country, Review, UserProfile, CategoryInfo } from '../types';
 import { INITIAL_RECIPES, INITIAL_COUNTRIES, INITIAL_CATEGORIES, INITIAL_REVIEWS, DEFAULT_USERS } from '../data/seedData';
 
-const RECIPES_STORAGE_KEY = 'recipe_app_recipes_v7';
-const COUNTRIES_STORAGE_KEY = 'recipe_app_countries_v7';
-const REVIEWS_STORAGE_KEY = 'recipe_app_reviews_v7';
-const USERS_STORAGE_KEY = 'recipe_app_users_v7';
-const CURRENT_USER_ID_KEY = 'recipe_app_current_user_id_v7';
+const RECIPES_STORAGE_KEY = 'recipe_app_recipes_v9';
+const COUNTRIES_STORAGE_KEY = 'recipe_app_countries_v9';
+const REVIEWS_STORAGE_KEY = 'recipe_app_reviews_v9';
+const USERS_STORAGE_KEY = 'recipe_app_users_v9';
+const CURRENT_USER_ID_KEY = 'recipe_app_current_user_id_v9';
 
 class RecipeService {
   private recipes: Recipe[] = [];

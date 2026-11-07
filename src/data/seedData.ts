@@ -12,8 +12,8 @@ export const INITIAL_COUNTRIES: Country[] = [
     flag: '🇮🇳',
     imageUrl: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80',
     description: 'A kaleidoscope of aromatic spices, slow-simmered curries, tandoori breads, and fragrant basmati rice dishes representing diverse regional culinary traditions.',
-    popularDishes: ['Chicken Biryani', 'Butter Chicken', 'Dal Makhani', 'Palak Paneer', 'Samosa'],
-    recipeCount: 3,
+    popularDishes: ['Chicken Biryani', 'Butter Chicken', 'Dal Makhani', 'Paneer Butter Masala', 'Punjabi Samosa', 'Masala Dosa', 'Palak Paneer', 'Gulab Jamun'],
+    recipeCount: 9,
     region: 'South Asia'
   },
   {
@@ -401,6 +401,390 @@ export const INITIAL_RECIPES: Recipe[] = [
     reviewCount: 31,
     isPublished: true,
     createdAt: '2026-02-20',
+    authorName: 'Chef Sanjeev Anand',
+    isFeatured: false
+  },
+  {
+    id: 'rec-in-4',
+    title: 'Shahi Paneer Butter Masala',
+    countryId: 'india',
+    countryName: 'India',
+    countryFlag: '🇮🇳',
+    category: 'Dinner',
+    cuisineType: 'Indian',
+    dietary: 'Vegetarian',
+    difficulty: 'Easy',
+    prepTimeMinutes: 15,
+    cookTimeMinutes: 20,
+    totalTimeMinutes: 35,
+    servings: 4,
+    description: 'Soft cubes of fresh malai paneer simmered in a royal, velvety sauce of roasted cashews, sun-ripened tomatoes, sweet butter, aromatic green cardamom, and crushed kasuri methi.',
+    imageUrl: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1200&q=80',
+    ingredients: [
+      { id: 'i271', name: 'Fresh Malai Paneer cubes', amount: '400', unit: 'g' },
+      { id: 'i272', name: 'Ripe Red Roma Tomatoes', amount: '5', unit: 'medium' },
+      { id: 'i273', name: 'Cashew nuts (soaked in warm water)', amount: '18', unit: 'nuts' },
+      { id: 'i274', name: 'Desi White Butter', amount: '3', unit: 'tbsp' },
+      { id: 'i275', name: 'Heavy Cream', amount: '0.33', unit: 'cup' },
+      { id: 'i276', name: 'Ginger & Garlic paste', amount: '1.5', unit: 'tbsp' },
+      { id: 'i277', name: 'Kashmiri Chili Powder', amount: '1', unit: 'tbsp' },
+      { id: 'i278', name: 'Shahi Garam Masala & Green Cardamom', amount: '1', unit: 'tsp' },
+      { id: 'i279', name: 'Kasuri Methi (crushed fenugreek leaves)', amount: '1', unit: 'tbsp' }
+    ],
+    instructions: [
+      {
+        stepNumber: 1,
+        title: 'Boil & Blend Cashew Tomato Purée',
+        description: 'Simmer chopped tomatoes, soaked cashews, cardamom pods, and ginger-garlic with 1 cup water for 12 minutes. Blend into a silky satin gravy and strain through a sieve.',
+        durationMinutes: 12,
+        tip: 'Straining the blended sauce ensures that signature silk-smooth texture.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Cook Masala in Foaming Butter',
+        description: 'Melt butter in a wide kadai. Add Kashmiri red chili powder, shahi garam masala, and immediately pour in the strained tomato-cashew purée. Simmer for 6 minutes.',
+        durationMinutes: 6,
+        tip: 'Adding chili powder directly to warm butter blooms the radiant orange-red color.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Simmer Paneer Cubes Gently',
+        description: 'Soak paneer cubes in warm water for 5 minutes to keep them ultra-soft. Gently fold paneer into the simmering gravy along with heavy cream and 1 tsp honey.',
+        durationMinutes: 4,
+        tip: 'Never boil paneer vigorously or it turns chewy.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Finish with Kasuri Methi and Ghee',
+        description: 'Crush dried kasuri methi between palms and sprinkle on top with a final swirl of cream. Serve hot with garlic naan or butter kulcha.',
+        durationMinutes: 2,
+        tip: 'Rubbing kasuri methi activates its rich restaurant aroma.'
+      }
+    ],
+    rating: 4.95,
+    reviewCount: 42,
+    isPublished: true,
+    createdAt: '2026-02-22',
+    authorName: 'Chef Sanjeev Anand',
+    isFeatured: true
+  },
+  {
+    id: 'rec-in-5',
+    title: 'Crispy Punjabi Samosas with Chutneys',
+    countryId: 'india',
+    countryName: 'India',
+    countryFlag: '🇮🇳',
+    category: 'Street Food',
+    cuisineType: 'Indian',
+    dietary: 'Vegetarian',
+    difficulty: 'Medium',
+    prepTimeMinutes: 30,
+    cookTimeMinutes: 25,
+    totalTimeMinutes: 55,
+    servings: 6,
+    description: 'Golden, crackling pastry triangles flavored with carom seeds (ajwain), generously stuffed with chunky cumin-roasted potatoes, green peas, toasted cashews, ginger, and green chilies.',
+    imageUrl: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80',
+    ingredients: [
+      { id: 'i280', name: 'All-Purpose Flour (Maida)', amount: '2', unit: 'cups' },
+      { id: 'i281', name: 'Ajwain (Carom seeds)', amount: '1', unit: 'tsp' },
+      { id: 'i282', name: 'Ghee or Oil for dough shortening', amount: '4', unit: 'tbsp' },
+      { id: 'i283', name: 'Boiled Potatoes, peeled & roughly crushed', amount: '4', unit: 'large' },
+      { id: 'i284', name: 'Green Peas', amount: '0.5', unit: 'cup' },
+      { id: 'i285', name: 'Whole Coriander Seeds, coarsely crushed', amount: '1', unit: 'tbsp' },
+      { id: 'i286', name: 'Amchur (Dry Mango Powder) & Garam Masala', amount: '1', unit: 'tsp each' },
+      { id: 'i287', name: 'Green Chilies & Ginger, finely chopped', amount: '2', unit: 'tbsp' },
+      { id: 'i288', name: 'Mint Chutney & Sweet Saunth Tamarind Chutney', amount: '1', unit: 'batch' }
+    ],
+    instructions: [
+      {
+        stepNumber: 1,
+        title: 'Knead Firm Khasta Dough',
+        description: 'Rub ghee into flour and ajwain with fingertips until the mixture resembles breadcrumbs and holds shape when squeezed. Add cold water gradually to knead a very stiff, firm dough. Rest covered for 25 minutes.',
+        durationMinutes: 10,
+        tip: 'A stiff dough is the secret to blister-free, shatteringly crisp samosa crust.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Sauté Spiced Chunky Aloo Filling',
+        description: 'Heat 1 tbsp oil, crackle crushed coriander seeds and cumin. Sauté ginger and green chilies. Add crushed potatoes, green peas, amchur, garam masala, and salt. Cook for 5 minutes and cool completely.',
+        durationMinutes: 8,
+        tip: 'Never mash the potatoes completely smooth; chunky texture is authentic.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Shape and Fill Pastry Cones',
+        description: 'Roll dough into an oval, cut in half. Form half-circle into a cone, sealing the overlapping seam with water. Fill with potato masala, dampen open top edges, make a pleat at the back, and press firmly closed.',
+        durationMinutes: 15,
+        tip: 'Ensure the bottom seal is completely closed so oil cannot seep inside.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Low Heat Slow Fry to Golden Perfection',
+        description: 'Drop samosas into moderately warm oil (not smoking). Fry slowly over low heat for 15-20 minutes, turning occasionally until crust is pale gold, then increase heat for 2 minutes to crisp. Drain and serve hot with chutneys.',
+        durationMinutes: 20,
+        tip: 'Frying in low temperature oil prevents blisters and produces a flaky cookie-like crunch.'
+      }
+    ],
+    rating: 4.96,
+    reviewCount: 39,
+    isPublished: true,
+    createdAt: '2026-02-23',
+    authorName: 'Chef Sanjeev Anand',
+    isFeatured: true
+  },
+  {
+    id: 'rec-in-6',
+    title: 'Dhaba-Style Palak Paneer',
+    countryId: 'india',
+    countryName: 'India',
+    countryFlag: '🇮🇳',
+    category: 'Dinner',
+    cuisineType: 'Indian',
+    dietary: 'Vegetarian',
+    difficulty: 'Easy',
+    prepTimeMinutes: 15,
+    cookTimeMinutes: 20,
+    totalTimeMinutes: 35,
+    servings: 4,
+    description: 'Fresh tender spinach leaves blanched and puréed with green chilies, simmered with caramelized onions, golden garlic, cumin, and soft pan-seared paneer cubes, finished with fresh ginger juliennes.',
+    imageUrl: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80',
+    ingredients: [
+      { id: 'i289', name: 'Fresh Spinach leaves (Palak), cleaned', amount: '500', unit: 'g' },
+      { id: 'i290', name: 'Fresh Paneer cubes', amount: '300', unit: 'g' },
+      { id: 'i291', name: 'Garlic cloves, finely chopped', amount: '6', unit: 'cloves' },
+      { id: 'i292', name: 'Ginger juliennes & Green chilies', amount: '2', unit: 'tbsp' },
+      { id: 'i293', name: 'Cumin seeds & Kasuri methi', amount: '1', unit: 'tsp each' },
+      { id: 'i294', name: 'Heavy Cream or Ghee', amount: '2', unit: 'tbsp' },
+      { id: 'i295', name: 'Lemon juice', amount: '1', unit: 'tbsp' }
+    ],
+    instructions: [
+      {
+        stepNumber: 1,
+        title: 'Blanch Spinach in Ice Water',
+        description: 'Drop washed spinach leaves into boiling water with a pinch of sugar for 90 seconds. Immediately transfer to an ice bath, drain, and blend into a bright green purée with green chilies.',
+        durationMinutes: 5,
+        tip: 'The ice water bath locks in vibrant emerald green chlorophyll color.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Caramelize Garlic and Spices',
+        description: 'Heat ghee in a pan. Add cumin seeds and chopped garlic; sauté until golden and fragrant. Add onions and cook until lightly browned.',
+        durationMinutes: 5,
+        tip: 'Toasted garlic flavor is the defining characteristic of dhaba-style palak.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Simmer Palak Gravy with Paneer',
+        description: 'Pour in the vibrant spinach purée. Season with salt, garam masala, and 2 tbsp water. Simmer on low heat for 5 minutes, then gently drop in fresh paneer cubes.',
+        durationMinutes: 5,
+        tip: 'Cook uncovered to retain the bright green hue.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Finish with Lemon and Cream',
+        description: 'Swirl in heavy cream, lemon juice, and crushed kasuri methi. Garnish with fresh ginger juliennes and serve with hot makki ki roti or parathas.',
+        durationMinutes: 2,
+        tip: 'Lemon juice cuts the iron richness of spinach and brightens flavor.'
+      }
+    ],
+    rating: 4.89,
+    reviewCount: 28,
+    isPublished: true,
+    createdAt: '2026-02-24',
+    authorName: 'Chef Sanjeev Anand',
+    isFeatured: false
+  },
+  {
+    id: 'rec-in-7',
+    title: 'Crispy Masala Dosa with Sambar & Coconut Chutney',
+    countryId: 'india',
+    countryName: 'India',
+    countryFlag: '🇮🇳',
+    category: 'Breakfast',
+    cuisineType: 'Indian',
+    dietary: 'Vegetarian',
+    difficulty: 'Medium',
+    prepTimeMinutes: 20,
+    cookTimeMinutes: 15,
+    totalTimeMinutes: 35,
+    servings: 4,
+    description: 'Golden paper-thin fermented rice and urad dal crepes spread with fragrant red chili garlic chutney, stuffed with spiced mustard-tempered potato masala, served with piping hot vegetable sambar and fresh coconut chutney.',
+    imageUrl: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=80',
+    ingredients: [
+      { id: 'i296', name: 'Fermented Dosa Batter (rice & urad dal)', amount: '3', unit: 'cups' },
+      { id: 'i297', name: 'Boiled Potatoes, peeled and mashed', amount: '3', unit: 'medium' },
+      { id: 'i298', name: 'Mustard seeds & Urad dal', amount: '1', unit: 'tsp each' },
+      { id: 'i299', name: 'Curry leaves & Fresh Green chilies', amount: '10', unit: 'leaves, 3 chilies' },
+      { id: 'i300', name: 'Turmeric powder & Sliced Onions', amount: '0.5', unit: 'tsp turmeric, 1 onion' },
+      { id: 'i301', name: 'Desi Ghee or Sesame oil for roasting', amount: '4', unit: 'tbsp' },
+      { id: 'i302', name: 'Fresh Coconut Chutney & Toor Dal Sambar', amount: '1', unit: 'serving' }
+    ],
+    instructions: [
+      {
+        stepNumber: 1,
+        title: 'Temper the Potato Masala (Aloo Palya)',
+        description: 'Heat 1 tbsp oil in a pan. Splutter mustard seeds, urad dal, curry leaves, and green chilies. Sauté sliced onions and ginger until soft. Add turmeric and mashed potatoes with 3 tbsp water; stir into a moist savory filling.',
+        durationMinutes: 8,
+        tip: 'Adding a splash of water keeps the potato filling spreadable and soft.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Heat & Season the Cast Iron Tawa',
+        description: 'Heat a heavy cast iron tawa until water droplets sizzle and dance. Rub with half a cut onion dipped in oil to create a natural non-stick patina.',
+        durationMinutes: 4,
+        tip: 'The onion rub seasons the pan and guarantees smooth dosa release.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Spread Batter in Spiral from Center',
+        description: 'Pour a ladleful of batter into the center of the tawa. Using the base of the ladle, spread outward in a continuous spiral motion into a thin even round.',
+        durationMinutes: 2,
+        tip: 'Do not pause while spreading; keep one fluid motion.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Drizzle Ghee, Fill, and Roll',
+        description: 'Drizzle ghee around the edges and center. Roast on medium-high heat until underside is golden brown and crackling crisp. Place potato masala in center, fold into a cylinder, and serve with sambar and coconut chutney.',
+        durationMinutes: 4,
+        tip: 'Pure ghee produces that irresistible restaurant-style golden shine and aroma.'
+      }
+    ],
+    rating: 4.97,
+    reviewCount: 44,
+    isPublished: true,
+    createdAt: '2026-02-25',
+    authorName: 'Chef Sanjeev Anand',
+    isFeatured: true
+  },
+  {
+    id: 'rec-in-8',
+    title: 'Coastal Malabar Prawn Curry (Chemmeen Curry)',
+    countryId: 'india',
+    countryName: 'India',
+    countryFlag: '🇮🇳',
+    category: 'Dinner',
+    cuisineType: 'Indian',
+    dietary: 'Non-vegetarian',
+    difficulty: 'Easy',
+    prepTimeMinutes: 15,
+    cookTimeMinutes: 18,
+    totalTimeMinutes: 33,
+    servings: 3,
+    description: 'Plump ocean prawns poached in creamy coconut milk infused with kudampuli (Malabar kokum), mustard seeds, shallots, fiery green chilies, fenugreek, and crispy fresh curry leaves.',
+    imageUrl: 'https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=1200&q=80',
+    ingredients: [
+      { id: 'i303', name: 'Fresh Tiger Prawns, peeled and deveined', amount: '450', unit: 'g' },
+      { id: 'i304', name: 'Thick Coconut Milk & Thin Coconut Milk', amount: '1', unit: 'cup each' },
+      { id: 'i305', name: 'Kudampuli (Malabar Kokum soaked in water)', amount: '3', unit: 'pieces' },
+      { id: 'i306', name: 'Small Pearl Shallots, thinly sliced', amount: '10', unit: 'shallots' },
+      { id: 'i307', name: 'Curry leaves & Fresh Ginger juliennes', amount: '2', unit: 'sprigs, 1 tbsp' },
+      { id: 'i308', name: 'Coconut Oil for authentic tempering', amount: '2', unit: 'tbsp' },
+      { id: 'i309', name: 'Turmeric & Kashmiri Chili powder', amount: '1', unit: 'tbsp' }
+    ],
+    instructions: [
+      {
+        stepNumber: 1,
+        title: 'Soak Kudampuli & Sauté Aromatics',
+        description: 'Soak kudampuli pieces in 1/2 cup warm water. Heat coconut oil in an earthenware pot (meen chatti). Sauté sliced shallots, ginger, green chilies, and curry leaves until translucent.',
+        durationMinutes: 5,
+        tip: 'Earthen clay pots impart a signature rustic Kerala flavor.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Simmer Kokum with Thin Coconut Milk',
+        description: 'Add turmeric, chili powder, and coriander powder; fry for 30 seconds. Pour in thin coconut milk and soaked kudampuli with its water. Bring to a gentle boil for 5 minutes.',
+        durationMinutes: 6,
+        tip: 'Kudampuli provides a smoky, tart depth superior to tamarind.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Poach Prawns in Coconut Milk',
+        description: 'Drop cleaned prawns into simmering broth. Cook for 3-4 minutes just until prawns curl into "C" shapes and turn coral pink.',
+        durationMinutes: 4,
+        tip: 'Prawns curl into a "C" when cooked; an "O" shape means overcooked.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Temper with Coconut Oil and Thick Milk',
+        description: 'Pour in thick coconut cream and turn off heat immediately. In a separate small ladle, crackle mustard seeds, fenugreek, and curry leaves in 1 tbsp coconut oil; pour over curry and cover.',
+        durationMinutes: 3,
+        tip: 'Never boil thick coconut milk or it will separate.'
+      }
+    ],
+    rating: 4.93,
+    reviewCount: 31,
+    isPublished: true,
+    createdAt: '2026-02-25',
+    authorName: 'Chef Sanjeev Anand',
+    isFeatured: false
+  },
+  {
+    id: 'rec-in-9',
+    title: 'Royal Khoya Gulab Jamun',
+    countryId: 'india',
+    countryName: 'India',
+    countryFlag: '🇮🇳',
+    category: 'Dessert',
+    cuisineType: 'Indian',
+    dietary: 'Vegetarian',
+    difficulty: 'Medium',
+    prepTimeMinutes: 25,
+    cookTimeMinutes: 25,
+    totalTimeMinutes: 50,
+    servings: 8,
+    description: 'Melt-in-mouth milk solid (mawa/khoya) dumplings gently kneaded with fresh paneer and cardamoms, deep-fried to deep golden-amber over gentle flame and soaked in warm saffron-rosewater syrup.',
+    imageUrl: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=1200&q=80',
+    ingredients: [
+      { id: 'i310', name: 'Fresh Khoya / Mawa (grated)', amount: '250', unit: 'g' },
+      { id: 'i311', name: 'Soft Fresh Paneer (crumbled fine)', amount: '100', unit: 'g' },
+      { id: 'i312', name: 'All-Purpose Flour (Maida)', amount: '3', unit: 'tbsp' },
+      { id: 'i313', name: 'Baking Powder', amount: '0.25', unit: 'tsp' },
+      { id: 'i314', name: 'Desi Ghee for frying', amount: '2', unit: 'cups' },
+      { id: 'i315', name: 'Sugar for syrup', amount: '2', unit: 'cups' },
+      { id: 'i316', name: 'Green Cardamom pods & Saffron strands', amount: '5', unit: 'pods, 1 pinch' },
+      { id: 'i317', name: 'Pure Rose Water', amount: '1', unit: 'tsp' }
+    ],
+    instructions: [
+      {
+        stepNumber: 1,
+        title: 'Prepare Aromatic Saffron Sugar Syrup',
+        description: 'Boil sugar and 2 cups water with bruised cardamoms and saffron for 8-10 minutes until lightly sticky (half-string consistency). Stir in rose water and keep warm.',
+        durationMinutes: 10,
+        tip: 'Syrup must be warm, not boiling, when soaking fried jamuns.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Knead Smooth Crack-Free Khoya Dough',
+        description: 'Mash grated khoya and paneer together with the heels of your palms for 8 minutes until completely smooth. Sift in flour and baking powder. Gently combine into a soft dough without over-kneading.',
+        durationMinutes: 10,
+        tip: 'Knead until no granular texture remains; smooth dough prevents cracking during frying.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Roll into Mirror-Smooth Spheres',
+        description: 'Pinch small portions and roll between gentle palms into small, perfectly smooth balls without any surface cracks.',
+        durationMinutes: 6,
+        tip: 'Any hairline surface crack will split open in hot ghee.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Gentle Low-Flame Ghee Fry',
+        description: 'Heat ghee on lowest heat. Gently slide balls in. Swirl the ghee with a spoon without touching the jamuns so they rotate and brown evenly for 12-14 minutes until deep mahogany amber.',
+        durationMinutes: 14,
+        tip: 'Low flame cooking allows heat to cook all the way through to the core.'
+      },
+      {
+        stepNumber: 5,
+        title: 'Soak in Warm Syrup for 2 Hours',
+        description: 'Remove hot jamuns and immediately immerse in warm sugar syrup. Let soak for at least 2 hours as they swell and become tender, spongy, and juicy.',
+        durationMinutes: 5,
+        tip: 'Serve warm with slivered pistachios or alongside vanilla bean ice cream.'
+      }
+    ],
+    rating: 4.98,
+    reviewCount: 52,
+    isPublished: true,
+    createdAt: '2026-02-25',
     authorName: 'Chef Sanjeev Anand',
     isFeatured: false
   },
